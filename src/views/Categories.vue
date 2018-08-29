@@ -8,7 +8,11 @@
     <h1>Categories</h1>
     <div v-for="category in categories">
       <h2>{{ category.name }}</h2>
-      <h4>{{ category.image }}</h4>
+      <!-- <h4>{{ category.image }}</h4> -->
+      <img v-bind:src="category.image" alt="" width=200>
+      <div v-for="goal in category.goals">
+        <p>{{ goal.title }}</p>
+      </div>
     </div>
   </div>
 </template>

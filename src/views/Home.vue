@@ -30,7 +30,7 @@
 
     <h3 class="h3-description rellax-text" data-rellax-speed="-1">What is important in your life?</h3>
 
-    <h6 class="category category-absolute rellax-text" data-rellax-speed="-2">Designed by <a href="http://invisionapp.com/"><img src="assets/img/invision-white-slim.png" class="invision-logo"/></a>. Coded by <a href="https://www.creative-tim.com/"><img src="assets/img/creative-tim-white-slim2.png" class="creative-tim-logo"/></a>.</h6>
+ <!--    <h6 class="category category-absolute rellax-text" data-rellax-speed="-2">Designed by <a href="http://invisionapp.com/"><img src="assets/img/invision-white-slim.png" class="invision-logo"/></a>. Coded by <a href="https://www.creative-tim.com/"><img src="assets/img/creative-tim-white-slim2.png" class="creative-tim-logo"/></a>.</h6> -->
 
 
   </div>
