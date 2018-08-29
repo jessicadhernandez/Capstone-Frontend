@@ -7,7 +7,7 @@
 
 
             <div class="navbar-translate">
-                <a class="navbar-brand" href="/#/goals" rel="tooltip" title="Designed by Invision. Coded by Creative Tim"data-placement="bottom"> 
+                <a class="navbar-brand" href="/#/goal" rel="tooltip" title="Designed by Invision. Coded by Creative Tim"data-placement="bottom"> 
                     Add a goal
                 </a>
 
@@ -57,17 +57,17 @@
                                 <i class="now-ui-icons text_align-left"></i>
                                 Login
                             </a>
-                            <a class="dropdown-item" href="sections.html#teams">
+                            <a class="dropdown-item" href="/#/logout">
                                 <i class="now-ui-icons sport_user-run"></i>
-                                Teams
+                                Logout
                             </a>
-                            <a class="dropdown-item" href="sections.html#projects">
+                            <a class="dropdown-item" href="/#/categories">
                                 <i class="now-ui-icons education_paper"></i>
-                                Projects
+                                Categories
                             </a>
-                            <a class="dropdown-item" href="sections.html#pricing">
+                            <a class="dropdown-item" href="/#/goals">
                                 <i class="now-ui-icons business_money-coins"></i>
-                                Pricing
+                                Goals
                             </a>
                             <a class="dropdown-item" href="sections.html#testimonials">
                                 <i class="now-ui-icons ui-2_chat-round"></i>

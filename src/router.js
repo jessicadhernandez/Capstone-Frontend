@@ -6,6 +6,8 @@ import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 import Categories from "./views/Categories.vue";
 import Goals from "./views/Goals.vue";
+import Category from "./views/Category.vue";
+import Goal from "./views/Goal.vue";
 
 Vue.use(Router);
 
@@ -25,6 +27,16 @@ export default new Router({
       path: "/Goals",
       name: "Goals",
       component: Goals
+    },
+    {
+      path: "/Category",
+      name: "Category",
+      component: Category
+    },
+    {
+      path: "/Goal",
+      name: "Goal",
+      component: Goal
     },
     {
       path: "/signup",

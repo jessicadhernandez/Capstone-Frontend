@@ -36,9 +36,9 @@
   </div>
 
 
-  <div class="container">
+<!--   <div class="container">
     <h1>Welcome to The Bucket List</h1>
-  </div>
+  </div> -->
 
   </div>
 </template>

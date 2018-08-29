@@ -1,12 +1,23 @@
 <template>
   <div class="home">
+    <h1>New goal</h1>
     <ul>
       <li v-for="error in errors" class="error">
         {{ error }}
       </li>
     </ul>
-    <h1>Goals</h1>
-    <div v-for="goal in goals">
+    <div>
+      title: <input type="text" v-model="title">
+      start_date: <input type="text" v-model="start_date">
+      end_date: <input type="text" v-model="end_date">
+      description: <input type="text" v-model="description">
+      completed: <input type="text" v-model="completed">
+      category: <input type="text" v-model="category">
+      image: <input type="text" v-model="image">
+      <button v-on:click="createGoal()">Create goal</button>
+    </div>
+<!--     <h1>Goals</h1> -->
+<!--     <div v-for="goal in goals">
       <h2>{{ goal.title }}</h2>
       <h4>{{ goal.start_date }}</h4>
       <p>{{ goal.end_date }}</p>
@@ -14,7 +25,7 @@
       <p>{{ goal.completed }}</p>
       <p>{{ goal.image }}</p>
       <p>{{ goal.category }}</p>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -41,12 +52,12 @@ export default {
       errors: []
     };
   },
-  created: function() {
-    axios.get("http://localhost:3000/api/goals").then(response => {
-      console.log(response);
-      this.goals = response.data;
-    });
-  },
+  // created: function() {
+  //   axios.get("http://localhost:3000/api/goals").then(response => {
+  //     console.log(response);
+  //     this.goals = response.data;
+  //   });
+  // },
   methods: {
     createGoal: function() {
       this.errors = [];

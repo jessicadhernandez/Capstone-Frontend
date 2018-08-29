@@ -1,10 +1,17 @@
 <template>
   <div class="home">
+    <h1>New category</h1>
     <ul>
       <li v-for="error in errors" class="error">
         {{ error }}
       </li>
     </ul>
+    <div>
+      name: <input type="text" v-model="name">
+      image: <input type="text" v-model="image">
+
+      <button v-on:click="createCategory()">Create category</button>
+    </div>
     <h1>Categories</h1>
     <div v-for="category in categories">
       <h2>{{ category.name }}</h2>
