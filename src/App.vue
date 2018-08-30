@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-
+<div id="app">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white fixed-top" color-on-scroll="500">
