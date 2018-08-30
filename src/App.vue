@@ -1,6 +1,7 @@
 <template>
   <div id="app">
 
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white fixed-top" color-on-scroll="500">
         <div class="container">
@@ -136,7 +137,7 @@
             </div>
         </div>
     </nav>
-    <!-- End Navbar -->
+    <!-- End Navbar -->                    
     <br>
     <br>
     <br>

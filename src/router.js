@@ -8,6 +8,7 @@ import Categories from "./views/Categories.vue";
 import Goals from "./views/Goals.vue";
 import Category from "./views/Category.vue";
 import Goal from "./views/Goal.vue";
+import CategoriesShow from "./views/CategoriesShow.vue";
 
 Vue.use(Router);
 
@@ -22,6 +23,11 @@ export default new Router({
       path: "/Categories",
       name: "Categories",
       component: Categories
+    },
+    {
+      path: "/Categories/:id",
+      name: "Categories-show",
+      component: CategoriesShow
     },
     {
       path: "/Goals",
