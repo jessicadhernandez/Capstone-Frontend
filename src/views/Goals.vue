@@ -5,6 +5,7 @@
         {{ error }}
       </li>
     </ul>
+
     <h1>Goals</h1>
     <div v-for="goal in goals">
       <h2>{{ goal.title }}</h2>
@@ -15,6 +16,8 @@
       <p>{{ goal.image }}</p>
       <p>{{ goal.category }}</p>
     </div>
+<!--       <input type="checkbox" id="checkbox" v-model="completeGoal(goal)">
+      <span v-bind:class="{completed: goal.completed}">{{ goal.title }}</span> -->
   </div>
 </template>
 
@@ -31,6 +34,7 @@ export default {
   data: function() {
     return {
       goals: [],
+      completeGoal: [],
       title: "",
       start_date: "",
       end_date: "",
@@ -48,6 +52,9 @@ export default {
     });
   },
   methods: {
+    completeGoal: function(inputGoal) {
+      inputGoal.completed = !inputGoal.completed;
+    },
     createGoal: function() {
       this.errors = [];
       var params = {

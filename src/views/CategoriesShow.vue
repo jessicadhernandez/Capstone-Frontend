@@ -7,17 +7,13 @@
         <div class="page-header-image" data-parallax="true" style="background-image: url('/assets/img/bg44.jpg') ;">
         </div>
 
-
-
         <div class="content-center">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2 class="title">A Place for Entrepreneurs to Share and Discover New Stories</h2>
-                    <a href="#button" class="btn btn-primary btn-round  btn-icon" >
-                   <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#button" class="btn btn-primary btn-round  btn-icon">
-                   <i class="fa fa-instagram"></i>
+            <h2 class="title">A Place to Create and Discover New Goals</h2>
+              <a href="/#/goal" class="btn btn-primary btn-round">
+                   <i class="now-ui-icons ui-2_favourite-28"></i>
+                   New Goal
                </a>
           </div>
         </div>
@@ -60,7 +56,7 @@
                                       <div class="title">
                                         <h4>Tags</h4>
                                       </div>
-                                      <input type="text" value="Amsterdam,Washington,Sydney,Beijing" class="tagsinput" data-role="tagsinput" data-color="success"/>
+                                      <input type="text" value="travel" class="tagsinput" data-role="tagsinput" data-color="success"/>
 
                                       <!-- You can change data-color="rose" with one of our colors primary | warning | info | danger | success -->
                                       </div>

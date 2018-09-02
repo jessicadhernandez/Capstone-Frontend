@@ -9,6 +9,9 @@ import Goals from "./views/Goals.vue";
 import Category from "./views/Category.vue";
 import Goal from "./views/Goal.vue";
 import CategoriesShow from "./views/CategoriesShow.vue";
+import Vue2Filters from "vue2-filters";
+
+Vue.use(Vue2Filters);
 
 Vue.use(Router);
 

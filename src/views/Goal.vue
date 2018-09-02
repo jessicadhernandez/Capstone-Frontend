@@ -42,7 +42,7 @@ export default {
   data: function() {
     return {
       goals: [],
-      title: "",
+      title: "Bake a cake",
       start_date: "",
       end_date: "",
       description: "",

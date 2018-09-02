@@ -1,16 +1,17 @@
 <template>
 <div id="app">
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white fixed-top" color-on-scroll="500">
         <div class="container">
-
-
-            <div class="navbar-translate">
-                <a class="navbar-brand" href="/#/goal" rel="tooltip" title="Designed by Invision. Coded by Creative Tim"data-placement="bottom"> 
+                <a class="navbar-brand" href="/#/goal" rel="tooltip" title="Hint"data-placement="bottom"> 
                     Add a goal
                 </a>
-
+            <div class="navbar-translate">
+                        <div class="row">
+                            <div class="form-group has-success">
+                                <input type="text" placeholder="Search goals or tags" class="form-control form-control-success" />
+                            </div>
+                        </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
                     <span class="navbar-toggler-bar bar2"></span>
@@ -22,7 +23,7 @@
                 <ul class="navbar-nav ml-auto">
 
 
-            <li class="nav-item dropdown">
+<!--             <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenu" href="#" data-toggle="dropdown">
                             <i class="now-ui-icons design_app"></i>
                             <p>Components</p>
@@ -37,12 +38,12 @@
                                 Documentation
                             </a>
               </div>
-                    </li>
+                    </li> -->
 
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
                             <i class="now-ui-icons files_paper" aria-hidden="true"></i>
-                            <p>Sections</p>
+                            <p>Home</p>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="/#/">
@@ -67,7 +68,7 @@
                             </a>
                             <a class="dropdown-item" href="/#/goals">
                                 <i class="now-ui-icons business_money-coins"></i>
-                                Goals
+                                Nothing here
                             </a>
                             <a class="dropdown-item" href="sections.html#testimonials">
                                 <i class="now-ui-icons ui-2_chat-round"></i>
@@ -82,8 +83,8 @@
 
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
-                            <i class="now-ui-icons design_image" aria-hidden="true"></i>
-                            <p>Examples</p>
+                            <i class="now-ui-icons design_bullet-list-67" aria-hidden="true"></i>
+                            <p>Bucket List</p>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="examples/about-us.html">
@@ -174,7 +175,7 @@
             </div>
         </div>
     </footer>
-    
+
   </div>
 </template>
 

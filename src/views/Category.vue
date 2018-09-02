@@ -12,11 +12,11 @@
 
       <button v-on:click="createCategory()">Create category</button>
     </div>
-    <h1>Categories</h1>
+<!--     <h1>Categories</h1>
     <div v-for="category in categories">
       <h2>{{ category.name }}</h2>
       <h4>{{ category.image }}</h4>
-    </div>
+    </div> -->
   </div>
 </template>
 
