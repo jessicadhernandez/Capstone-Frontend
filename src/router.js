@@ -10,6 +10,8 @@ import Category from "./views/Category.vue";
 import Goal from "./views/Goal.vue";
 import CategoriesShow from "./views/CategoriesShow.vue";
 import Vue2Filters from "vue2-filters";
+import GoalsShow from "./views/GoalsShow.vue";
+import Profile from "./views/Profile.vue";
 
 Vue.use(Vue2Filters);
 
@@ -21,6 +23,11 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/Profile",
+      name: "Profile",
+      component: Profile
     },
     {
       path: "/Categories",
@@ -36,6 +43,11 @@ export default new Router({
       path: "/Goals",
       name: "Goals",
       component: Goals
+    },
+    {
+      path: "/Goals/:id",
+      name: "Goals-show",
+      component: GoalsShow
     },
     {
       path: "/Category",

@@ -8,9 +8,11 @@
                 </a>
             <div class="navbar-translate">
                         <div class="row">
-                            <div class="form-group has-success">
-                                <input type="text" placeholder="Search goals or tags" class="form-control form-control-success" />
-                            </div>
+                            <form v-on:submit.prevent="onSearch()">
+                                <div class="form-group has-success">
+                                    <input v-model="searchTerms" type="text" placeholder="Search goals or tags" class="form-control form-control-success" />
+                                </div>
+                            </form>
                         </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
@@ -123,7 +125,7 @@
                                 <i class="now-ui-icons shopping_bag-16"></i>
                                 Product Page
                             </a>
-                            <a class="dropdown-item" href="examples/profile-page.html">
+                            <a class="dropdown-item" href="/#/profile">
                                 <i class="now-ui-icons users_single-02"></i>
                                 Profile Page
                             </a>
@@ -181,3 +183,26 @@
 
 <style>
 </style>
+
+<script>
+export default {
+    data: function() {
+        return {
+            searchTerms: ""
+        };
+    },
+    methods: {
+        onSearch: function() {
+            console.log("you searched something...", this.searchTerms);
+            var query = this.searchTerms;
+            this.searchTerms = "";
+            if (this.$route.path !== "/goals") {
+                this.$router.push("/goals?tag=" + query);
+            } else {
+                this.$router.push("/goals?tag=" + query);
+                window.location.reload();
+            }
+        }
+    }
+};
+</script>

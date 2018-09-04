@@ -1,20 +1,27 @@
 <template>
   <div class="home">
     <div class="wrapper">
-      <div class="page-header page-header">
-        <div class="page-header-image" data-parallax="true" style="background-image: : url('../assets/img/bg44.jpg') ;">
-        </div>
-        <div class="content-center">
+      <!-- <div class="page-header page-header"> -->
+        <!-- <div class="page-header-image" data-parallax="true" style="background-image: url('../../assets/img/bg44.jpg') ;"> -->
+        <!-- </div> -->
+        <!-- <div class="content-center">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
-              <h2 class="title">Share and Discover New Goals</h2>
-                <a href="/#/category" class="btn btn-primary btn-round">
+            <h2 class="title">Share and Discover New Goals</h2>
+              <a href="#button" class="btn btn-primary btn-round  btn-icon" >
+               <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#button" class="btn btn-primary btn-round  btn-icon">
+               <i class="fa fa-instagram"></i>
+              </a>
+              <a href="/#/category" class="btn btn-primary btn-round">
                    <i class="now-ui-icons ui-2_favourite-28"></i>
                    New category
-                </a>
+               </a>
             </div>
           </div>
-        </div>
+        </div> -->
+      <!-- </div> -->
       <div class="projects-4">
         <div class="container-fluid">
             <div class="row">
@@ -64,13 +71,9 @@
           <p>{{ goal.title }}</p>
           <img v-bind:src="goal.image" alt="" width="200">
         </div>
-        <div v-for="tag in category.tags">
-          <p>{{ tag.name }}</p>
-        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <style>
@@ -88,15 +91,17 @@ export default {
       categories: [],
       name: "",
       image: "",
-      searchFilter: "",
       errors: []
     };
   },
   created: function() {
-    axios.get("http://localhost:3000/api/categories").then(response => {
-      console.log("categories", response);
-      this.categories = response.data;
-    });
+    axios
+      .get("http://localhost:3000/api/categories")
+      .then(response => {
+        console.log("categories", response);
+        this.categories = response.data;
+      })
+      .catch(error => this.$router.push("/login"));
   },
   methods: {
     createCategory: function() {

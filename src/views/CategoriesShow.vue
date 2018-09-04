@@ -34,7 +34,7 @@
                 <div v-for="goal in category.goals" class="col-md-4">
                     <div class="card card-plain card-blog">
                         <div class="card-image">
-                            <a href="#pablo">
+                            <a href="/#/">
                                 <img class="img rounded img-raised" v-bind:src="goal.image" />
                             </a>
                         </div>
@@ -42,7 +42,7 @@
                         <div class="card-body">
                             <h6 class="category text-info">{{ category.name }}</h6>
                             <h4 class="card-title">
-                                <a href="#pablo">{{ goal.title }}</a>
+                                <a v-bind:href="'/#/goals/' + goal.id ">{{ goal.title }}</a>
                             </h4>
                             <p class="card-description">
                                 {{ goal.description }}<a href="#pablo"> Read More </a>
@@ -56,7 +56,7 @@
                                       <div class="title">
                                         <h4>Tags</h4>
                                       </div>
-                                      <input type="text" value="travel" class="tagsinput" data-role="tagsinput" data-color="success"/>
+                                      <button v-for="tag in goal.tags" v-on:click="searchTag(tag)" class="btn btn-primary btn-simple btn-round">{{ tag }}</button>
 
                                       <!-- You can change data-color="rose" with one of our colors primary | warning | info | danger | success -->
                                       </div>
@@ -99,6 +99,11 @@ export default {
         console.log(response);
         this.category = response.data;
       });
+  },
+  methods: {
+    searchTag: function(tag) {
+      this.$router.push("/goals?tag=" + tag);
+    }
   }
 };
 </script>

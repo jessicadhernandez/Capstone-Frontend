@@ -8615,7 +8615,7 @@ Created using IcoMoon - icomoon.io
     max-height: fit-content; }
   .page-header .content-center {
     position: absolute;
-    top: 10%;
+    top: 50%;
     left: 50%;
     z-index: 2;
     -webkit-transform: translate(-50%, -50%);
