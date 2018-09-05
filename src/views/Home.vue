@@ -24,15 +24,16 @@
 
     <div class="rellax-text-container">
         <h1 class="h1-seo rellax-text" data-rellax-speed="-2">Bucket List</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 class="h3-description rellax-text" data-rellax-speed="-1">What is important in your life?</h3>
     </div>
-
-
-
-    <h3 class="h3-description rellax-text" data-rellax-speed="-1">What is important in your life?</h3>
-
- <!--    <h6 class="category category-absolute rellax-text" data-rellax-speed="-2">Designed by <a href="http://invisionapp.com/"><img src="assets/img/invision-white-slim.png" class="invision-logo"/></a>. Coded by <a href="https://www.creative-tim.com/"><img src="assets/img/creative-tim-white-slim2.png" class="creative-tim-logo"/></a>.</h6> -->
-
-
+<!--        <h3 class="h3-description rellax-text" data-rellax-speed="-1">What is important in your life?</h3> -->
   </div>
 
 

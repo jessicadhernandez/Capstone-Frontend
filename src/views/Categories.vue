@@ -1,28 +1,52 @@
 <template>
-  <div class="home">
-    <div class="wrapper">
-      <!-- <div class="page-header page-header"> -->
-        <!-- <div class="page-header-image" data-parallax="true" style="background-image: url('../../assets/img/bg44.jpg') ;"> -->
-        <!-- </div> -->
-        <!-- <div class="content-center">
+  <div class="home wrapper">
+
+
+<!-- <div class="page-header page-header-small"> -->
+
+
+    <!-- <div class="page-header-image" data-parallax="true" style="background-image: url('/assets/img/bg44.jpg'); z-index: 1">
+    </div> -->
+<!--     <div class="page-header-image" data-parallax="true" style="background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2) ), url('/assets/img/bg44.jpg'); z-index: 1">
+    </div>
+
+
+
+    <div class="content-center">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto text-center">
+        <h2 class="title">A Place for Entrepreneurs to Share and Discover New Stories</h2>
+                <a href="#button" class="btn btn-primary btn-round  btn-icon" >
+               <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#button" class="btn btn-primary btn-round  btn-icon">
+               <i class="fa fa-instagram"></i>
+           </a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+ -->
+
+      <div class="page-header page-header">
+        <div class="page-header-image" data-parallax="true" style="background-image: url('/assets/img/bg44.jpg'); z-index: 1;">
+        </div>
+        <div class="content-center">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">Share and Discover New Goals</h2>
-              <a href="#button" class="btn btn-primary btn-round  btn-icon" >
-               <i class="fa fa-twitter"></i>
-              </a>
-              <a href="#button" class="btn btn-primary btn-round  btn-icon">
-               <i class="fa fa-instagram"></i>
-              </a>
+
               <a href="/#/category" class="btn btn-primary btn-round">
                    <i class="now-ui-icons ui-2_favourite-28"></i>
                    New category
                </a>
             </div>
           </div>
-        </div> -->
-      <!-- </div> -->
-      <div class="projects-4">
+        </div>
+      </div>
+      <div class="projects-4" style="padding: 0">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 px-0" v-for="category in categories">
@@ -47,9 +71,9 @@
                                     </span>
                                 </div>
 
-                                <div class="stats-link pull-right">
+<!--                                 <div class="stats-link pull-right">
                                     <a href="#pablo" class="footer-link">Yachts</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -59,19 +83,19 @@
       </div>
 
  
-      <ul>
+      <!-- <ul>
         <li v-for="error in errors" class="error">
           {{ error }}
         </li>
-      </ul>
-      <div v-for="category in categories">
+      </ul> -->
+<!--       <div v-for="category in categories">
         <h2>{{ category.name }}</h2>
         <img v-bind:src="category.image" alt="" width=200>
         <div v-for="goal in category.goals">
           <p>{{ goal.title }}</p>
           <img v-bind:src="goal.image" alt="" width="200">
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

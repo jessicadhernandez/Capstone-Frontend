@@ -1,16 +1,14 @@
 <template>
 <div id="app">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top" color-on-scroll="500">
+    <!-- navbar navbar-expand-lg  navbar-absolute navbar-transparent -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-transparent" color-on-scroll="500">
         <div class="container">
-                <a class="navbar-brand" href="/#/goal" rel="tooltip" title="Hint"data-placement="bottom"> 
-                    Add a goal
-                </a>
             <div class="navbar-translate">
                         <div class="row">
                             <form v-on:submit.prevent="onSearch()">
-                                <div class="form-group has-success">
-                                    <input v-model="searchTerms" type="text" placeholder="Search goals or tags" class="form-control form-control-success" />
+                                <div class="form-group">
+                                    <input v-model="searchTerms" type="text" placeholder="Search for goals" class="form-control form-control" />
                                 </div>
                             </form>
                         </div>
@@ -20,38 +18,26 @@
                     <span class="navbar-toggler-bar bar3"></span>
                 </button>
             </div>
-
             <div class="collapse navbar-collapse" data-nav-image="./assets/img/blurred-image-1.jpg" data-color="orange">
-                <ul class="navbar-nav ml-auto">
-
-
-<!--             <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenu" href="#" data-toggle="dropdown">
-                            <i class="now-ui-icons design_app"></i>
-                            <p>Components</p>
-                        </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="index-2.html">
-                                <i class="now-ui-icons business_chart-pie-36"></i>
-                                All Components
-                            </a>
-                <a class="dropdown-item" href="https://creativetimofficial.github.io/now-ui-kit-pro/#/components?ref=nuk-pro-doc">
-                                <i class="now-ui-icons files_single-copy-04"></i>
-                                Documentation
-                            </a>
-              </div>
-                    </li> -->
-
+                <ul class="navbar-nav ml-auto">                
+                <a class="navbar-brand now-ui-icons ui-1_simple-add" href="/#/goal" data-placement="bottom"> 
+                    Add a goal
+                </a>
+                    <li class="nav-item dropdown">
+                                <a href="/#/" class="nav-link">
+                                    <i class="now-ui-icons shopping_shop"></i>
+                                    Home
+                                </a>   
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
-                            <i class="now-ui-icons files_paper" aria-hidden="true"></i>
-                            <p>Home</p>
+                            <i class="now-ui-icons design_bullet-list-67" aria-hidden="true"></i>
+                            <p>Bucket List</p>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/#/">
+<!--                             <a class="dropdown-item" href="/#/">
                                 <i class="now-ui-icons shopping_box"></i>
                                 Home
-                            </a>
+                            </a> -->
                             <a class="dropdown-item" href="/#/signup">
                                 <i class="now-ui-icons ui-2_settings-90"></i>
                                 Signup
@@ -71,113 +57,69 @@
                             <a class="dropdown-item" href="/#/goals">
                                 <i class="now-ui-icons business_money-coins"></i>
                                 Nothing here
-                            </a>
-                            <a class="dropdown-item" href="sections.html#testimonials">
-                                <i class="now-ui-icons ui-2_chat-round"></i>
-                                Testimonials
-                            </a>
-                            <a class="dropdown-item" href="sections.html#contactus">
-                                <i class="now-ui-icons tech_mobile"></i>
-                                Contact Us
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown">
-                            <i class="now-ui-icons design_bullet-list-67" aria-hidden="true"></i>
-                            <p>Bucket List</p>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="examples/about-us.html">
-                                <i class="now-ui-icons business_bulb-63"></i>
-                                About-us
-                            </a>
-                            <a class="dropdown-item" href="examples/blog-post.html">
-                                <i class="now-ui-icons text_align-left"></i>
-                                Blog Post
-                            </a>
-                            <a class="dropdown-item" href="examples/blog-posts.html">
-                                <i class="now-ui-icons design_bullet-list-67"></i>
-                                Blog Posts
-                            </a>
-                            <a class="dropdown-item" href="examples/contact-us.html">
-                                <i class="now-ui-icons location_pin"></i>
-                                Contact Us
-                            </a>
-                            <a class="dropdown-item" href="examples/landing-page.html">
-                                <i class="now-ui-icons education_paper"></i>
-                                Landing Page
-                            </a>
-                            <a class="dropdown-item" href="examples/login-page.html">
-                                <i class="now-ui-icons users_circle-08"></i>
-                                Login Page
-                            </a>
-                            <a class="dropdown-item" href="examples/pricing.html">
-                                <i class="now-ui-icons business_money-coins"></i>
-                                Pricing
-                            </a>
-                            <a class="dropdown-item" href="examples/ecommerce.html">
-                                <i class="now-ui-icons shopping_shop"></i>
-                                Ecommerce Page
-                            </a>
-                            <a class="dropdown-item" href="examples/product-page.html">
-                                <i class="now-ui-icons shopping_bag-16"></i>
-                                Product Page
-                            </a>
+                            </a>    
                             <a class="dropdown-item" href="/#/profile">
                                 <i class="now-ui-icons users_single-02"></i>
                                 Profile Page
                             </a>
-                            <a class="dropdown-item" href="examples/signup-page.html">
-                                <i class="now-ui-icons tech_mobile"></i>
-                                Signup Page
-                            </a>
                         </div>
                     </li>
+                </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- End Navbar -->                    
-    <br>
-    <br>
-    <br>
+    <!-- End Navbar -->
 
     <router-view/>
+    
+        <footer class="footer " >
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#creative">
+                                Creative Tim
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#creative">
+                               About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#creative">
+                               Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#creative">
+                                License
+                            </a>
+                        </li>
+                    </ul>
 
-    <footer class="footer "  data-background-color="black">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#creative">
-                            Creative Tim
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#creative">
-                           About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#creative">
-                           Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#creative">
-                            License
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="copyright">
-                &copy;, Designed by <a href="http://www.invisionapp.com/">Invision</a>. Coded by <a href="https://www.creative-tim.com/">Creative Tim</a>.
+                </nav>
+
+                    <ul class="social-buttons pull-right">
+                            <li>
+                                <a href="https://twitter.com/CreativeTim" class="btn btn-icon btn-neutral btn-twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/CreativeTim" class="btn btn-icon btn-neutral btn-dribbble">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/CreativeTimOfficial" class="btn btn-icon btn-neutral btn-google">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                        </ul>
             </div>
-        </div>
-    </footer>
-
+        </footer>
   </div>
 </template>
 

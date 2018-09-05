@@ -69,6 +69,14 @@
                         <div class="col-md-6">
                             <div class="blog-tags">
                                 Tags:
+                                <div class="media-body">
+                                  <textarea input type="text" v-model="inputTag" class="form-control" placeholder="Hint, add commas" rows="4"></textarea>
+                                  <div class="media-footer">
+                                      <button v-on:click="addTag()" class="btn btn-primary pull-right">
+                                          <i class="now-ui-icons ui-1_send"></i> Create
+                                      </button>
+                                  </div>
+                          </div>
                                 <span class="label label-primary">Photography</span>
                                 <span class="label label-primary">Stories</span>
                                 <span class="label label-primary">Castle</span>
@@ -178,6 +186,7 @@ export default {
     return {
       goal: { messages: [] },
       inputComment: "",
+      inputTag: "",
       errors: []
     };
   },
@@ -202,6 +211,18 @@ export default {
         function(response) {
           this.goal.messages.push(response.data);
           this.inputComment = "";
+        }.bind(this)
+      );
+    },
+    addTag: function(name) {
+      var params = {
+        name: this.inputTag,
+        goal_id: this.$route.params.id
+      };
+      axios.post("http://localhost:3000/api/tags", params).then(
+        function(response) {
+          this.goal.tag.push(response.data);
+          this.inputTag = "";
         }.bind(this)
       );
     }
