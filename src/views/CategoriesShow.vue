@@ -4,16 +4,16 @@
     <div class="page-header page-header-small">
 
 
-        <div class="page-header-image" data-parallax="true" style="background-image: url('/assets/img/bg44.jpg') ;">
+        <div class="page-header-image" data-parallax="true" style="background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2) ), url('/assets/img/bg14.jpg'); z-index: 1">
         </div>
 
         <div class="content-center">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2 class="title">A Place to Create and Discover New Goals</h2>
+            <h2 class="title">Create and Discover Goals</h2>
               <a href="/#/goal" class="btn btn-primary btn-round">
-                   <i class="now-ui-icons ui-2_favourite-28"></i>
-                   New Goal
+                   <i class="now-ui-icons"></i>
+                   Create a Goal
                </a>
           </div>
         </div>
@@ -28,8 +28,7 @@
 
     <div class="container">
         <div class="section">
-            <h3 class="title text-center">Goals</h3>
-            <br />
+            <h3 class="title text-center"></h3>
             <div class="row">
                 <div v-for="goal in category.goals" class="col-md-4">
                     <div class="card card-plain card-blog">

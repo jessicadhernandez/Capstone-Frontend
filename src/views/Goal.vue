@@ -63,23 +63,13 @@
                                   <input v-model="end_date" type="date" class="form-control" placeholder="">
                                 </div>
                             </div>
-                            <div class="col-md-12 text-left">
-                              <div class="fileinput fileinput-new text-center" data-provides="fileinput">
-                                 <div class="fileinput-new thumbnail img-raised">
-                                <!-- <img src="" alt="..."> -->
-                                 </div>
-                        <!--          <div class="fileinput-preview fileinput-exists thumbnail img-raised"></div> -->
-                                 <div>
-                                <span class="btn btn-raised btn-round btn-default btn-file">
-                                   <span class="fileinput-new">Select image</span>
-                                   <span class="fileinput-exists">Change</span>
-                                   <input type="file" name="..." />
-                                </span>
-                                      <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput">
-                                      <i class="fa fa-times"></i> Remove</a>
-                                 </div>
-                              </div> 
-                            </div>
+                            <div class="col-md-6 text-left">
+                                <label>Image</label>
+                                <div class="input-group">
+                                  <input v-model="image" type="text" class="form-control" placeholder="Enter a url link">
+                                </div>
+                            </div>                            
+
                         </div>
 
                         <div class="row">
@@ -89,6 +79,11 @@
                                 </button>
                             </div>
                         </div>
+                        <div class="buttons">
+                            <a href="/#/goals" class="btn btn-primary btn-round mt-4 btn-sm">
+                                View goals
+                            </a>
+                        </div>                                                
                     </form>
 <!--                 </div> -->
 <!--             </div>
@@ -162,10 +157,11 @@ export default {
       categories: []
     };
   },
-  created: function() {
+  create: function() {
     axios.get("http://localhost:3000/api/categories").then(response => {
       console.log(response);
       this.categories = response.data;
+      console.log(this.categories);
     });
   },
   methods: {

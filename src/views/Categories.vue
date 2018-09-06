@@ -1,46 +1,18 @@
 <template>
   <div class="home wrapper">
-
-
-<!-- <div class="page-header page-header-small"> -->
-
-
-    <!-- <div class="page-header-image" data-parallax="true" style="background-image: url('/assets/img/bg44.jpg'); z-index: 1">
-    </div> -->
-<!--     <div class="page-header-image" data-parallax="true" style="background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2) ), url('/assets/img/bg44.jpg'); z-index: 1">
-    </div>
-
-
-
-    <div class="content-center">
-    <div class="row">
-      <div class="col-md-8 ml-auto mr-auto text-center">
-        <h2 class="title">A Place for Entrepreneurs to Share and Discover New Stories</h2>
-                <a href="#button" class="btn btn-primary btn-round  btn-icon" >
-               <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#button" class="btn btn-primary btn-round  btn-icon">
-               <i class="fa fa-instagram"></i>
-           </a>
-      </div>
-    </div>
-  </div>
-
-
-</div>
- -->
-
       <div class="page-header page-header">
         <div class="page-header-image" data-parallax="true" style="background-image: url('/assets/img/bg44.jpg'); z-index: 1;">
         </div>
         <div class="content-center">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2 class="title">Share and Discover New Goals</h2>
-
+            <h2 class="title">Categories</h2>
+            <h3 class="h3-description rellax-text" data-rellax-speed="-1">What is important in your life?</h3>
+            <br>
+            <br>
               <a href="/#/category" class="btn btn-primary btn-round">
-                   <i class="now-ui-icons ui-2_favourite-28"></i>
-                   New category
+                   <i class="now-ui-icons"></i>
+                   Create a category!
                </a>
             </div>
           </div>

@@ -34,10 +34,10 @@
                             <p>Bucket List</p>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-<!--                             <a class="dropdown-item" href="/#/">
-                                <i class="now-ui-icons shopping_box"></i>
-                                Home
-                            </a> -->
+                            <a class="dropdown-item" href="/#/goals">
+                                <i class="now-ui-icons sport_trophy"></i>
+                                Inspiration
+                            </a>
                             <a class="dropdown-item" href="/#/signup">
                                 <i class="now-ui-icons ui-2_settings-90"></i>
                                 Signup
@@ -53,10 +53,6 @@
                             <a class="dropdown-item" href="/#/categories">
                                 <i class="now-ui-icons education_paper"></i>
                                 Categories
-                            </a>
-                            <a class="dropdown-item" href="/#/goals">
-                                <i class="now-ui-icons business_money-coins"></i>
-                                Nothing here
                             </a>    
                             <a class="dropdown-item" href="/#/profile">
                                 <i class="now-ui-icons users_single-02"></i>

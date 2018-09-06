@@ -3,7 +3,7 @@
     <div class="page-header page-header-small">
 
 
-        <div class="page-header-image" data-parallax="true" style="background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2) ), url('/assets/img/project1.jpg'); z-index: 1">>
+        <div class="page-header-image" data-parallax="true" style="background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2) ), url('/assets/img/project1.jpg'); z-index: 1">
         </div>
 
         <div class="content-center">
@@ -11,7 +11,7 @@
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">A Place to Create and Discover New Goals</h2>
               <a href="/#/goal" class="btn btn-primary btn-round">
-                   <i class="now-ui-icons ui-2_favourite-28"></i>
+                   <i class="now-ui-icons"></i>
                    New Goal
                </a>
           </div>
@@ -30,18 +30,7 @@
                 </option>
               </datalist>
 
-              <div v-for="goal in orderBy(filterBy(goals, searchFilter, 'title'), 'title')" v-on:click="completeGoal(inputGoal)">
-<!--               <span v-bind:class="{completed: goal.completed}">{{ goal.title }}</span>                
-                <h2>{{ goal.id }}</h2>
-                <h2>{{ goal.title }}</h2>
-                <h4>{{ goal.start_date }}</h4>
-                <p>{{ goal.end_date }}</p>
-                <p>{{ goal.description }}</p>
-                <p>{{ goal.completed }}</p>
-                <p>{{ goal.image }}</p>
-                <p>{{ goal.category }}</p>    -->                                      
-<!--                 <a v-bind:href=" '/#/goals/' + goal.id ">View details</a> -->
-              </div>
+
   <div class="blogs-2" id="blogs-2">
 
       <div class="container">
@@ -52,7 +41,7 @@
                   <br />
 
                   <div class="row justify-content-center">
-                      <div v-for="goal in goals" class="col-md-5">
+                      <div v-for="goal in filteredGoals" class="col-md-5">
                           <div class="card card-plain card-blog">
                               <div class="card-image">
                                   <a href="#pablo">
@@ -106,8 +95,7 @@ export default {
       description: "",
       completed: "",
       image: "",
-      category: "",
-      inputGoal: "",
+      category_id: "",
       searchFilter: "",
       errors: []
     };
@@ -123,12 +111,34 @@ export default {
       this.goals = response.data;
     });
   },
+  computed: {
+    filteredGoals: function() {
+      var self = this;
+      console.log("searchFilter", self.searchFilter);
+      var searchedGoals = self.goals.filter(function(goal) {
+        return (
+          goal.title.toLowerCase().indexOf(self.searchFilter.toLowerCase()) !==
+          -1
+        );
+      });
+      console.log("test");
+      return searchedGoals.sort(function(a, b) {
+        if (a.title > b.title) {
+          return 1;
+        }
+        if (b.title > a.title) {
+          return -1;
+        }
+        return 0;
+      });
+    }
+  },
   methods: {
-    completeGoal: function(goal) {
-      // var index = this.goals.indexOf(inputGoal);
-      // this.goals.splice(index, 1);
-      inputGoal.completed = !inputGoal.completed;
-    },
+    // completeGoal: function(goal) {
+    //   // var index = this.goals.indexOf(inputGoal);
+    //   // this.goals.splice(index, 1);
+    //   inputGoal.completed = !inputGoal.completed;
+    // },
     createGoal: function() {
       this.errors = [];
       var params = {
@@ -150,6 +160,11 @@ export default {
           console.log(error.response.data.errors);
           this.errors = error.response.data.errors;
         });
+    },
+    filterGoals: function() {
+      // orderBy(filterBy(goals, searchFilter), 'title')
+      console.log("filterGoals");
+      return this.goals;
     }
   }
 };

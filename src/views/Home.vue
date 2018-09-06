@@ -31,9 +31,9 @@
         <br>
         <br>
         <br>
-        <h3 class="h3-description rellax-text" data-rellax-speed="-1">What is important in your life?</h3>
+<!--         <h3 class="h3-description rellax-text" data-rellax-speed="-1">"One day your life will flash before your eyes. Make sure it's worth watching."</h3> -->
     </div>
-<!--        <h3 class="h3-description rellax-text" data-rellax-speed="-1">What is important in your life?</h3> -->
+        <h3 class="h3-description rellax-text" data-rellax-speed="-1">"One day your life will flash before your eyes. Make sure it's worth watching."</h3>
   </div>
 
 
