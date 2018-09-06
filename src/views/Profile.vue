@@ -27,7 +27,7 @@
         <p class="category">Software Developer</p>
         <div class="content">
             <div class="social-description">
-                <h2>26</h2>
+                <h2>6</h2>
                 <p>Comments</p>
 
             </div>

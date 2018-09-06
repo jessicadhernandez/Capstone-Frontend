@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
                 <h2 class="title">{{ goal.title }}</h2>
-                <h4>{{ goal.description }}</h4>
+<!--                 <h4>{{ goal.description }}</h4> -->
             </div>
         </div>
     </div>
@@ -50,9 +50,7 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
                     <h3 class="title">Description...</h3>
-                    <p>This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more. We are here to make life better.
-                    <br /> <br />
-                    And now I look and look around and there’s so many Kanyes I've been trying to figure out the bed design for the master bedroom at our Hidden Hills compound... and thank you for turning my personal jean jacket into a couture piece.</p>
+                    <p>{{goal.description}}</p>
                 </div>
             </div>
         </div>
@@ -70,14 +68,11 @@
                                 <div class="media-body">
                                   <textarea input type="text" v-model="inputTag" class="form-control" placeholder="Hint, add commas" rows="4"></textarea>
                                   <div class="media-footer">
-                                      <button v-on:click="addTag()" class="btn btn-primary pull-right">
+                                      <button v-on:click="addTag()" class="btn btn-primary btn-round pull-right">
                                           <i class="now-ui-icons ui-1_send"></i> Create
                                       </button>
                                   </div>
                           </div>
-<!--                                 <span class="label label-primary">Photography</span>
-                                <span class="label label-primary">Stories</span>
-                                <span class="label label-primary">Castle</span> -->
                             </div>
                         </div>
                         <div class="col-md-6">

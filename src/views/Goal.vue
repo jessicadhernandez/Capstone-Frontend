@@ -74,7 +74,7 @@
 
                         <div class="row">
                             <div class="col-md-4 ml-auto mr-auto text-center">
-                                <button class="btn btn-primary btn-round mt-4 btn-sm">
+                                <button class="btn btn-primary btn-round mt-4 btn-sm" v-on:click="createGoal()">
                                     Create
                                 </button>
                             </div>

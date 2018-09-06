@@ -38,6 +38,14 @@
                                 <i class="now-ui-icons sport_trophy"></i>
                                 Inspiration
                             </a>
+                            <a class="dropdown-item" href="/#/profile">
+                                <i class="now-ui-icons users_single-02"></i>
+                                Profile Page
+                            </a>  
+                            <a class="dropdown-item" href="/#/categories">
+                                <i class="now-ui-icons education_paper"></i>
+                                Categories
+                            </a>                                                        
                             <a class="dropdown-item" href="/#/signup">
                                 <i class="now-ui-icons ui-2_settings-90"></i>
                                 Signup
@@ -50,14 +58,14 @@
                                 <i class="now-ui-icons sport_user-run"></i>
                                 Logout
                             </a>
-                            <a class="dropdown-item" href="/#/categories">
+<!--                             <a class="dropdown-item" href="/#/categories">
                                 <i class="now-ui-icons education_paper"></i>
                                 Categories
-                            </a>    
-                            <a class="dropdown-item" href="/#/profile">
+                            </a>     -->
+<!--                             <a class="dropdown-item" href="/#/profile">
                                 <i class="now-ui-icons users_single-02"></i>
                                 Profile Page
-                            </a>
+                            </a> -->
                         </div>
                     </li>
                 </li>
