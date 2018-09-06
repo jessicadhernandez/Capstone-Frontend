@@ -48,7 +48,7 @@
 
                                 <div class="author">
                                     <img src="/assets/img/olivia.jpg" alt="..." class="avatar img-raised">
-                                    <span>Anna Spark</span>
+                                    <span>Jessica Hernandez</span>
                                 <div id="textareaTags">
                                   <div class="row">
                                     <div class="col-md-6">
@@ -73,9 +73,9 @@
 </div>
 
 
-      <div v-for="goal in category.goals">
+<!--       <div v-for="goal in category.goals">
         <h4>{{ goal.title }}</h4>
-      </div>
+      </div> -->
       <a href="/#/categories">Back to all categories</a>
     </div>
   </div>

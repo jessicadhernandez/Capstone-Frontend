@@ -35,11 +35,11 @@
                             <div class="card-footer text-left">
                                 <div class="stats">
                                     <span>
-                                        <i class="now-ui-icons users_circle-08"></i>Nicholas Deleon
+                                        <i class="now-ui-icons users_circle-08"></i>Jessica Hernandez
                                     </span>
 
                                     <span>
-                                        <i class="now-ui-icons tech_watch-time"></i> June 2, 2017
+                                        <i class="now-ui-icons tech_watch-time"></i> September 2, 2018
                                     </span>
                                 </div>
 

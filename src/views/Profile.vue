@@ -23,21 +23,22 @@
                 </div>
             </div> -->
         </div>
-        <h3 class="title">Ryan Scheinder</h3>
-        <p class="category">Photographer</p>
+        <h3 class="title">Jessica Hernandez</h3>
+        <p class="category">Software Developer</p>
         <div class="content">
             <div class="social-description">
                 <h2>26</h2>
                 <p>Comments</p>
+
             </div>
 <!--             <div class="social-description">
                 <h2>26</h2>
                 <p>Comments</p>
             </div> -->
-            <div class="social-description">
+<!--             <div class="social-description">
                 <h2>48</h2>
                 <p>Bookmarks</p>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -48,22 +49,22 @@
 
                 <div class="section">
     <div class="container">
-        <div class="button-container">
-            <a href="#button" class="btn btn-primary btn-round btn-lg">Follow</a>
-            <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Follow me on Twitter">
+<!--         <div class="button-container">
+            <a href="#button" class="btn btn-primary btn-round btn-lg">Follow</a> -->
+<!--             <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Follow me on Twitter">
                 <i class="fa fa-twitter"></i>
             </a>
             <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Follow me on Instagram">
                 <i class="fa fa-instagram"></i>
-            </a>
-        </div>
+            </a> -->
+<!--         </div> -->
 
         <h3 class="title">About me</h3>
-        <h5 class="description text-center">An artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.</h5>
+        <h5 class="description text-center">A Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.</h5>
 
         <div class="row">
             <div class="col-md-12">
-                <h4 class="title text-center">My Portfolio</h4>
+                <h4 class="title text-center">My Profile</h4>
                 <div class="nav-align-center">
                     <ul class="nav nav-pills nav-pills-primary nav-pills-just-icons" role="tablist">
                         <li class="nav-item">
@@ -93,17 +94,17 @@
 
                                 <div class="card card-background card-background-product card-raised" style="background-image: url('../assets/img/bg23.jpg')">
                                     <div class="card-body">
-                                        <h2 class="card-title">Chair remake.</h2>
+                                        <h2 class="card-title">My Images.</h2>
                                         <p class="card-description text-white">
-                                            Trello’s boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way. It was a great project and I would be more than happy to do it again.
+                                            Organize and prioritize your goals in a fun, flexible and rewarding way. It was a great project and I would be more than happy to do it again.
                                         </p>
-                                        <label class="badge badge-neutral">Trello</label>
+                                        <label class="badge badge-neutral">Images</label>
                                     </div>
                                 </div>
 
                             </div>
 
-                            <div class="col-md-5">
+<!--                             <div class="col-md-5">
 
                                 <div class="info info-horizontal">
                                     <div class="icon icon-warning">
@@ -128,7 +129,7 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                     </div>
@@ -139,16 +140,16 @@
                             <div class="col-md-5 ml-auto mr-auto">
                                 <div class="card card-background card-background-product card-raised" style="background-image: url('../assets/img/project8.jpg')">
                                     <div class="card-body">
-                                        <h2 class="card-title">Social Analytics</h2>
+                                        <h2 class="card-title">Categories</h2>
                                         <p class="card-description">
                                             Insight to help you create, connect, and convert. Understand Your Audience's Interests, Influence, Interactions, and Intent. Discover emerging topics and influencers to reach new audiences.
                                         </p>
-                                        <label class="badge badge-neutral">Analytics</label>
+                                        <label class="badge badge-neutral">View my categories</label>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-5">
+<!--                             <div class="col-md-5">
                                 <div class="info info-horizontal">
                                     <div class="icon icon-danger">
                                         <i class="now-ui-icons ui-2_chat-round"></i>
@@ -172,7 +173,7 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
 
@@ -184,17 +185,17 @@
                             <div class="col-md-5 ml-auto mr-auto">
                                 <div class="card card-background card-background-product card-raised" style="background-image: url('../assets/img/bg25.jpg')">
                                     <div class="card-body">
-                                        <h2 class="card-title">Interior Redesign</h2>
+                                        <h2 class="card-title">Goals</h2>
                                         <p class="card-description">
                                             Insight to help you create, connect, and convert. Understand Your Audience's Interests, Influence, Interactions, and Intent. Discover emerging topics and influencers to reach new audiences.
                                         </p>
-                                        <label class="badge badge-neutral">Interior</label>
+                                        <label class="badge badge-neutral">View my goals</label>
                                     </div>
                                 </div>
 
                             </div>
 
-                            <div class="col-md-5">
+<!--                             <div class="col-md-5">
                                 <div class="info info-horizontal">
                                     <div class="icon icon-info">
                                         <i class="now-ui-icons design_palette"></i>
@@ -218,7 +219,7 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>

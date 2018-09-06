@@ -44,18 +44,18 @@
                       <div v-for="goal in filteredGoals" class="col-md-5">
                           <div class="card card-plain card-blog">
                               <div class="card-image">
-                                  <a href="#pablo">
+                                  <a v-bind:href="'/#/goals/' + goal.id ">
                                       <img class="img img-raised rounded" v-bind:src="goal.image" />
                                   </a>
                               </div>
 
                               <div class="card-body">
                                   <h6 class="category text-info">{{ goal.title }}</h6>
-                                  <h5 class="card-title">
-                                      <a href="#pablo">Alexa brings hands-free TV to more devices</a>
-                                  </h5>
-                                  <p class="card-description">
-                                      Alexa’s latest trick is offering a hands-free TV viewing experience, that will allow consumers to turn on or off their television, change inputs, fast forward, rewind and more, without having to first invoke a specific skill, or even press a button on their remote. <a href="#pablo">Read More </a>
+<!--                                   <h5 class="card-title">
+                                      <a href="/#/goals/">hello</a>
+                                  </h5> -->
+                                  <p v-bind:class="goal.description">
+                                      {{ goal.description }}<a href="#pablo">Read More </a>
                                   </p>
                               </div>
                           </div>

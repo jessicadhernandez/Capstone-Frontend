@@ -79,11 +79,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="buttons">
-                            <a href="/#/goals" class="btn btn-primary btn-round mt-4 btn-sm">
-                                View goals
-                            </a>
-                        </div>                                                
+                                               
                     </form>
 <!--                 </div> -->
 <!--             </div>
@@ -157,7 +153,7 @@ export default {
       categories: []
     };
   },
-  create: function() {
+  created: function() {
     axios.get("http://localhost:3000/api/categories").then(response => {
       console.log(response);
       this.categories = response.data;

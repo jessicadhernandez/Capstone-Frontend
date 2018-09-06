@@ -5,10 +5,8 @@
 <div class="page-header page-header-small">
 
 
-    <div class="page-header-image" data-parallax="true" v-bind:style="`background-image: url(${goal.image})`">
+    <div class="page-header-image" data-parallax="true" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url('/assets/img/marathon.jpg'); z-index: 1">
     </div>
-
-
 
 
     <div class="content-center">
@@ -28,7 +26,7 @@
 <div class="section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+<!--             <div class="col-md-12">
                 <div class="button-container">
                     <a href="#pablo" class="btn btn-primary btn-round btn-lg">
                         <i class="now-ui-icons text_align-left"></i> Read Article
@@ -44,14 +42,14 @@
                         <i class="fa fa-google"></i>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="section">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
-                    <h3 class="title">The Castle Looks Different at Night...</h3>
+                    <h3 class="title">Description...</h3>
                     <p>This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more. We are here to make life better.
                     <br /> <br />
                     And now I look and look around and there’s so many Kanyes I've been trying to figure out the bed design for the master bedroom at our Hidden Hills compound... and thank you for turning my personal jean jacket into a couture piece.</p>
@@ -77,9 +75,9 @@
                                       </button>
                                   </div>
                           </div>
-                                <span class="label label-primary">Photography</span>
+<!--                                 <span class="label label-primary">Photography</span>
                                 <span class="label label-primary">Stories</span>
-                                <span class="label label-primary">Castle</span>
+                                <span class="label label-primary">Castle</span> -->
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -98,7 +96,7 @@
 
                     <hr />
 
-                    <div class="card card-profile card-plain">
+<!--                     <div class="card card-profile card-plain">
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="card-avatar">
@@ -115,7 +113,7 @@
                                 <button type="button" class="btn btn-default pull-right btn-round">Follow</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -131,7 +129,7 @@
                         <div v-for="comment in goal.messages" class="media">
                             <a class="pull-left" href="#pablo">
                                 <div class="avatar">
-                                    <img class="media-object img-raised" src="/assets/img/mike.jpg" alt="..." width="200" />
+                                    <img class="media-object img-raised" src="/assets/img/jessica.jpg" alt="..." width="200" />
                                 </div>
                             </a>
                             <div class="media-body">
@@ -156,7 +154,7 @@
                       <div class="media media-post">
                           <a class="pull-left author" href="#pablo">
                               <div class="avatar">
-                                  <img class="media-object img-raised" alt="64x64" src="/assets/img/olivia.jpg">
+                                  <img class="media-object img-raised" alt="64x64" src="/assets/img/jessica.jpg">
                               </div>
                           </a>
                           <div class="media-body">
